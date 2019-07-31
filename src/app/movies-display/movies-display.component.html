@@ -1,0 +1,54 @@
+<p>movies-display works!</p>
+
+<div class="row">
+    <div class="col-sm-4">
+        <img src="../../assets/images/movie1.jpg" alt="movie 1">
+        <br>
+        <!-- <button>Write Review/Rating</button>
+        <br> -->
+        <form #frm="ngForm" (ngSubmit)="addReview1()">               
+                <input id="r1" type="text" name="review1" [(ngModel)]='tempReview1'>
+                <br>
+                <input id="r4" type="number" name="rating1" [(ngModel)]='tempRating1'>
+                <br>
+                <input type="submit" value="Write Review/Rating" >
+        </form>
+
+
+
+        <button (click)='hit1()'>View Review/Rating</button>
+        <p>Rating : {{tempAvg1}}</p>
+        <p>Review : {{tempList1}}</p>
+    </div>
+    <div class="col-sm-4">
+        <img src="../../assets/images/movie2.jpg" alt="movie 2">
+        <br>
+        <form #frm="ngForm" (ngSubmit)="addReview2()">               
+                <input id="r2" type="text" name="review2" [(ngModel)]='tempReview2'>
+                <br>
+                <input id="r5" type="number" name="rating2" [(ngModel)]='tempRating2'>
+                <br>
+                <input type="submit" value="Write Review/Rating" >
+        </form>
+        <!-- <button>Write Review/Rating</button> -->
+        
+        <button (click)='hit2()'>View Review/Rating</button>
+        <p>Rating : {{tempAvg2}}</p>
+        <p>Review : {{tempList2}}</p>
+    </div>
+    <div class="col-sm-4">
+        <img src="../../assets/images/movie3.jpg" alt="movie 3">
+        <br>
+        <!-- <button>Write Review/Rating</button> -->
+        <form #frm="ngForm" (ngSubmit)="addReview3()">               
+                <input id="r3" type="text" name="review3" [(ngModel)]='tempReview3'>
+                <br>
+                <input id="r6" type="number" name="rating3" [(ngModel)]='tempRating3'>
+                <br>
+                <input type="submit" value="Write Review/Rating" >
+        </form>
+        <button (click)='hit3()'>View Review/Rating</button>
+        <p>Rating : {{tempAvg3}}</p>
+        <p>Review : {{tempList3}}</p>
+    </div>
+  </div>
